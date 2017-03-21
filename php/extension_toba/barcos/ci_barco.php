@@ -1,5 +1,5 @@
 <?php
-require_once('extension_toba/barcos/datos.php');
+require_once('extension_toba/datos.php');
 class ci_barco extends sgpm_ci
 {
 	public $s__datos = [];
