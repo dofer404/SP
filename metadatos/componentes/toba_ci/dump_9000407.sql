@@ -193,18 +193,6 @@ INSERT INTO apex_objeto_dependencias (proyecto, dep_id, objeto_consumidor, objet
 	NULL, --inicializar
 	NULL  --orden
 );
-INSERT INTO apex_objeto_dependencias (proyecto, dep_id, objeto_consumidor, objeto_proveedor, identificador, parametros_a, parametros_b, parametros_c, inicializar, orden) VALUES (
-	'sgpm', --proyecto
-	'9000357', --dep_id
-	'9000407', --objeto_consumidor
-	'9000412', --objeto_proveedor
-	'frm_ml_servicios_a_asociar', --identificador
-	NULL, --parametros_a
-	NULL, --parametros_b
-	NULL, --parametros_c
-	NULL, --inicializar
-	NULL  --orden
-);
 --- FIN Grupo de desarrollo 9
 
 ------------------------------------------------------------
@@ -282,13 +270,6 @@ INSERT INTO apex_objetos_pantalla (proyecto, pantalla, objeto_ci, orden, dep_id)
 	'9000407', --objeto_ci
 	'1', --orden
 	'9000356'  --dep_id
-);
-INSERT INTO apex_objetos_pantalla (proyecto, pantalla, objeto_ci, orden, dep_id) VALUES (
-	'sgpm', --proyecto
-	'9000104', --pantalla
-	'9000407', --objeto_ci
-	'2', --orden
-	'9000357'  --dep_id
 );
 
 ------------------------------------------------------------

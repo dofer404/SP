@@ -87,6 +87,7 @@ class ci extends sgpm_ci
 	function conf__frm_srv(sgpm_ei_formulario $form)
 	{
     $this->s__datos['cuadro_2'][0]['duracion'] = '00:30';
+    $this->s__datos['cuadro_2'][0]['duracionNueva'] = '00:30';
     $form->set_datos($this->s__datos['cuadro_2'][0]);
 	}
 
