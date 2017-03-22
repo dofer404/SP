@@ -122,7 +122,59 @@ INSERT INTO apex_objeto_ut_formulario (objeto_ut_formulario_proyecto, objeto_ut_
 	NULL, --analisis_cambios
 	'0', --no_imprimir_efs_sin_estado
 	'0', --resaltar_efs_con_estado
-	NULL, --template
+	'<table>
+	<tbody>
+		<tr>
+			<td colspan="2">
+				[ef id=barra1]</td>
+		</tr>
+		<tr>
+			<td>
+				[ef id=eslora]</td>
+			<td>
+				[ef id=manga]</td>
+		</tr>
+		<tr>
+			<td>
+				[ef id=puntal]</td>
+			<td>
+				[ef id=calado]</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				[ef id=barra2]</td>
+		</tr>
+		<tr>
+			<td>
+				[ef id=arqueo_brut]</td>
+			<td>
+				[ef id=arqueo_neto]</td>
+		</tr>
+		<tr>
+			<td>
+				[ef id=peso_muerto]</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				[ef id=barra3]</td>
+		</tr>
+		<tr>
+			<td>
+				[ef id=n_motores]</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				[ef id=potencia]</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<p>&nbsp;</p>', --template
 	NULL  --template_impresion
 );
 
@@ -616,7 +668,7 @@ INSERT INTO apex_objeto_ei_formulario_ef (objeto_ei_formulario_fila, objeto_ei_f
 	'9000406', --objeto_ei_formulario
 	'sgpm', --objeto_ei_formulario_proyecto
 	'arqueo_brut', --identificador
-	'ef_editable', --elemento_formulario
+	'ef_editable_numero', --elemento_formulario
 	'arqueo_brut', --columnas
 	'0', --obligatorio
 	'0', --oculto_relaja_obligatorio
@@ -696,7 +748,7 @@ INSERT INTO apex_objeto_ei_formulario_ef (objeto_ei_formulario_fila, objeto_ei_f
 	'9000406', --objeto_ei_formulario
 	'sgpm', --objeto_ei_formulario_proyecto
 	'arqueo_neto', --identificador
-	'ef_editable', --elemento_formulario
+	'ef_editable_numero', --elemento_formulario
 	'arqueo_neto', --columnas
 	'0', --obligatorio
 	'0', --oculto_relaja_obligatorio
