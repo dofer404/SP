@@ -1,5 +1,5 @@
 ------------------------------------------------------------
---[512000002]--  nucuadro_2 
+--[512000002]--  cuadro_2 
 ------------------------------------------------------------
 
 ------------------------------------------------------------
@@ -20,7 +20,7 @@ INSERT INTO apex_objeto (proyecto, objeto, anterior, identificador, reflexivo, c
 	NULL, --subclase_archivo
 	NULL, --objeto_categoria_proyecto
 	NULL, --objeto_categoria
-	'nucuadro_2', --nombre
+	'cuadro_2', --nombre
 	NULL, --titulo
 	'0', --colapsable
 	NULL, --descripcion

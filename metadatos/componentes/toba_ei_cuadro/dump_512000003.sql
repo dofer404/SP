@@ -1,5 +1,5 @@
 ------------------------------------------------------------
---[512000003]--  nucuadro 
+--[512000003]--  cuadro 
 ------------------------------------------------------------
 
 ------------------------------------------------------------
@@ -20,7 +20,7 @@ INSERT INTO apex_objeto (proyecto, objeto, anterior, identificador, reflexivo, c
 	NULL, --subclase_archivo
 	NULL, --objeto_categoria_proyecto
 	NULL, --objeto_categoria
-	'nucuadro', --nombre
+	'cuadro', --nombre
 	'Listado de Barcos con Servicios Pendientes', --titulo
 	'0', --colapsable
 	NULL, --descripcion

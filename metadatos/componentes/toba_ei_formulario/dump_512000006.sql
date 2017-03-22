@@ -122,7 +122,23 @@ INSERT INTO apex_objeto_ut_formulario (objeto_ut_formulario_proyecto, objeto_ut_
 	NULL, --analisis_cambios
 	'0', --no_imprimir_efs_sin_estado
 	'0', --resaltar_efs_con_estado
-	NULL, --template
+	'<table width="90%">
+	<tbody>
+		<tr>
+			<td>
+				[ef id=matricula]</td>
+			<td>
+				[ef id=procedencia]</td>
+		</tr>
+		<tr>
+			<td>
+				[ef id=barco]</td>
+			<td>
+				[ef id=nacionalidad]</td>
+		</tr>
+	</tbody>
+</table>
+<p>&nbsp;</p>', --template
 	NULL  --template_impresion
 );
 

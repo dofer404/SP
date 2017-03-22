@@ -62,5 +62,33 @@ class ci extends sgpm_ci
     }
 	}
 
+	//-----------------------------------------------------------------------------------
+	//---- frm_2 ------------------------------------------------------------------------
+	//-----------------------------------------------------------------------------------
+
+	function conf__frm_2(sgpm_ei_formulario $form)
+	{
+    $seleccion = $this->s__datos['seleccion'];
+    $datos = $this->s__datos['cuadro'];
+
+
+    foreach ($datos as $key => $value) {
+      if ($datos[$key]['nro_entrada'] == $seleccion['nro_entrada']) {
+        $form->set_titulo('Datos para el la entrada Nro: ' . $datos[$key]['nro_entrada']);
+        $form->set_datos($datos[$key]);
+      }
+    }
+	}
+
+	//-----------------------------------------------------------------------------------
+	//---- frm_srv ------------------------------------------------------------------------
+	//-----------------------------------------------------------------------------------
+
+	function conf__frm_srv(sgpm_ei_formulario $form)
+	{
+    $this->s__datos['cuadro_2'][0]['duracion'] = '00:30';
+    $form->set_datos($this->s__datos['cuadro_2'][0]);
+	}
+
 }
 ?>

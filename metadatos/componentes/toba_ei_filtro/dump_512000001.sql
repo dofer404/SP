@@ -1,5 +1,5 @@
 ------------------------------------------------------------
---[512000001]--  nufiltro 
+--[512000001]--  filtro 
 ------------------------------------------------------------
 
 ------------------------------------------------------------
@@ -20,7 +20,7 @@ INSERT INTO apex_objeto (proyecto, objeto, anterior, identificador, reflexivo, c
 	NULL, --subclase_archivo
 	NULL, --objeto_categoria_proyecto
 	NULL, --objeto_categoria
-	'nufiltro', --nombre
+	'filtro', --nombre
 	'Cuadro de Búsquedas', --titulo
 	'0', --colapsable
 	NULL, --descripcion
