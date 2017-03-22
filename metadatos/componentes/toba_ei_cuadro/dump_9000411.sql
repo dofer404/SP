@@ -51,15 +51,15 @@ INSERT INTO apex_objeto_eventos (proyecto, evento_id, objeto, identificador, eti
 	'9000436', --evento_id
 	'9000411', --objeto
 	'asociar', --identificador
-	'&Asociar', --etiqueta
+	'Asociar', --etiqueta
 	'1', --maneja_datos
 	'1', --sobre_fila
 	NULL, --confirmacion
 	NULL, --estilo
-	'apex', --imagen_recurso_origen
-	NULL, --imagen
+	'proyecto', --imagen_recurso_origen
+	'mano_seleccion.png', --imagen
 	'0', --en_botonera
-	NULL, --ayuda
+	'Pone el servicio en cola temporalmente, una vez que guarde las modificaciones los servicios que estén asociados al barco, pasaran a estar disponibles para que dichos servicios puedan ser PRESTADOS.', --ayuda
 	'1', --orden
 	NULL, --ci_predep
 	NULL, --implicito
@@ -71,7 +71,7 @@ INSERT INTO apex_objeto_eventos (proyecto, evento_id, objeto, identificador, eti
 	NULL, --accion_vinculo_carpeta
 	NULL, --accion_vinculo_item
 	NULL, --accion_vinculo_objeto
-	NULL, --accion_vinculo_popup
+	'0', --accion_vinculo_popup
 	NULL, --accion_vinculo_popup_param
 	NULL, --accion_vinculo_target
 	NULL, --accion_vinculo_celda
@@ -157,7 +157,7 @@ INSERT INTO apex_objeto_ei_cuadro_columna (objeto_cuadro_proyecto, objeto_cuadro
 	NULL, --vinculo_target
 	NULL, --vinculo_celda
 	NULL, --vinculo_servicio
-	'0', --permitir_html
+	'1', --permitir_html
 	NULL, --grupo
 	NULL  --evento_asociado
 );

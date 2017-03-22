@@ -21,7 +21,7 @@ INSERT INTO apex_objeto (proyecto, objeto, anterior, identificador, reflexivo, c
 	NULL, --objeto_categoria_proyecto
 	NULL, --objeto_categoria
 	'ci_asb - frm_ml_servicios_a_asociar', --nombre
-	'Listado de Servicios a Asociar al Barco', --titulo
+	'Listado de Servicios listos para ser Asociados al Barco', --titulo
 	'0', --colapsable
 	NULL, --descripcion
 	'sgpm', --fuente_datos_proyecto

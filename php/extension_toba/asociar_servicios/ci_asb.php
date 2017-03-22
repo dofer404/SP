@@ -53,8 +53,10 @@ class ci_asb extends sgpm_ci
 	function conf__cuadro_2(sgpm_ei_cuadro $cuadro)
 	{
     $datosBarco = $this->s__datos['form_1']['datos_paracargar'];
-    $tipoBarco = $datosBarco['tipo'];
-    $this->s__datos['cuadro_2'] = datos::obtenerServiciosDisponibles($tipoBarco);
+    if (!isset($this->s__datos['cuadro_2'])) {
+      $tipoBarco = $datosBarco['tipo'];
+      $this->s__datos['cuadro_2'] = datos::obtenerServiciosDisponibles($tipoBarco);
+    }
     $cuadro->set_titulo('Servicios disponibles para las embarcaciones que realizan actividades de tipo: ' . $datosBarco['actividad']);
     $cuadro->set_datos($this->s__datos['cuadro_2']);
 	}
@@ -83,7 +85,7 @@ class ci_asb extends sgpm_ci
 
     foreach ($cuadro as $key => $value) {
       if ($cuadro[$key]['id_servicio'] == $seleccion['id_servicio']) {
-        /* Agregamos el servicio al frm_ml---------------------------*/
+        /* Armamos lo servicios que vamos a agregar al frm_ml-----------------*/
         $servicio = [
           'id_servicio' => $cuadro[$key]['id_servicio'],
           'servicio' => $cuadro[$key]['servicio'],
@@ -91,11 +93,21 @@ class ci_asb extends sgpm_ci
           'precio' => $cuadro[$key]['precio']
         ];
         array_push($this->s__conjuntoServicios, $servicio);
-        $form_ml->set_datos($this->s__conjuntoServicios);
         /* Hasta aca-------------------------------------------------*/
+
+        /*Desde aca actualizamos los datos que posee el cuadro*/
+        $this->s__datos['cuadro_2'][$key]['estado'] = $this->formatear_texto('En cola');
+
+        /*Aca seteamos los valores que iran en el cuadro que tiene servicios disponibles*/
+        $form_ml->set_datos($this->s__conjuntoServicios);
       }
     }
 	}
+
+  function formatear_texto($texto)
+  {
+    return '<p style="text-align: center;"><span style="color:#008000"><span style="font-size: 12px"><strong>' . $texto . '</strong></span></span></p>';
+  }
 
 	function conf_evt__cuadro_2__asociar(toba_evento_usuario $evento, $fila)
 	{
