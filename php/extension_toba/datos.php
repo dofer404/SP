@@ -153,7 +153,7 @@ class datos
 
   static function obtenerServiciosPendientes()
   {
-    $datos = self::obtenerServiciosDisponibles();
+    $datos = self::obtenerServiciosDisponibles('carga');
     foreach ($datos as $key => $value) {
       $datos[$key]['estado'] = 'En espera';
     }
