@@ -100,6 +100,7 @@ class datos
           'servicio' => 'Descarga de Contenedores',
           'precio' => '$1500',
           'duracion_estimada' => '30 Minutos',
+          'estado' => '',
           'tipo_duracion' => 'Minutos'
         ],
         [
@@ -107,6 +108,7 @@ class datos
           'servicio' => 'Limpieza de cubierta',
           'precio' => '$1000',
           'duracion_estimada' => '5 Horas',
+          'estado' => '',
           'tipo_duracion' => 'Horas'
         ],
         [
@@ -114,6 +116,7 @@ class datos
           'servicio' => 'Reabastecer combustible',
           'precio' => 'Variable',
           'duracion_estimada' => 'Variable',
+          'estado' => '',
           'tipo_duracion' => ''
         ],
         [
@@ -121,6 +124,7 @@ class datos
           'servicio' => 'Remolque',
           'precio' => '$1000',
           'duracion_estimada' => '35 Minutos',
+          'estado' => '',
           'tipo_duracion' => 'Minutos'
         ]];
         break;
@@ -130,6 +134,7 @@ class datos
           'servicio' => 'Reabastecer combustible',
           'precio' => 'Variable',
           'duracion_estimada' => 'Variable',
+          'estado' => '',
           'tipo_duracion' => ''
         ],
         [
@@ -137,6 +142,7 @@ class datos
           'servicio' => 'Limpieza de cubierta',
           'precio' => '$1000',
           'duracion_estimada' => '5 Horas',
+          'estado' => '',
           'tipo_duracion' => 'Horas'
         ],
         [
@@ -144,6 +150,7 @@ class datos
           'servicio' => 'Remolque',
           'precio' => 'Variable',
           'duracion_estimada' => 'Variable',
+          'estado' => '',
           'tipo_duracion' => ''
         ]];
         break;
