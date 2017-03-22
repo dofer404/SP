@@ -48,7 +48,9 @@ class datos
         * Lo que sigue es porque se utiliza el mismo array para
         * Cargar el formulario de la pantalla de edicion
         */
+        'tipo' => 'crucero',
         'nro_entrada' => '000134519',
+				'actividad' => 'Crucero Turistico',
         'nacionalidad' => 'Estadounidense'
 			],
 			[
@@ -64,24 +66,72 @@ class datos
         * Lo que sigue es porque se utiliza el mismo array para
         * Cargar el formulario de la pantalla de edicion
         */
+        'tipo' => 'carga',
         'nro_entrada' => '000134520',
+				'actividad' => 'Carga',
         'nacionalidad' => 'Canadiense'
 			]
     ];
     return $datos;
   }
 
-  static function obtenerServiciosDisponibles()
+  static function obtenerServiciosDisponibles($tipo)
   {
-    $datos = [
-      [
-        'id_servicio' => 1,
-        'servicio' => 'Descarga de Contenedores',
-        'precio' => '$1500',
-        'duracion_estimada' => '30',
-        'tipo_duracion' => 'Minutos'
-      ]
-    ];
+    switch ($tipo) {
+    case "carga":
+        $datos = [[
+          'id_servicio' => 1,
+          'servicio' => 'Descarga de Contenedores',
+          'precio' => '$1500',
+          'duracion_estimada' => '30 Minutos',
+          'tipo_duracion' => 'Minutos'
+        ],
+        [
+          'id_servicio' => 2,
+          'servicio' => 'Limpieza de cubierta',
+          'precio' => '$1000',
+          'duracion_estimada' => '5 Horas',
+          'tipo_duracion' => 'Horas'
+        ],
+        [
+          'id_servicio' => 3,
+          'servicio' => 'Reabastecer combustible',
+          'precio' => 'Variable',
+          'duracion_estimada' => 'Variable',
+          'tipo_duracion' => ''
+        ],
+        [
+          'id_servicio' => 4,
+          'servicio' => 'Remolque',
+          'precio' => '$1000',
+          'duracion_estimada' => '35 Minutos',
+          'tipo_duracion' => 'Minutos'
+        ]];
+        break;
+    case "crucero":
+        $datos = [[
+          'id_servicio' => 3,
+          'servicio' => 'Reabastecer combustible',
+          'precio' => 'Variable',
+          'duracion_estimada' => 'Variable',
+          'tipo_duracion' => ''
+        ],
+        [
+          'id_servicio' => 2,
+          'servicio' => 'Limpieza de cubierta',
+          'precio' => '$1000',
+          'duracion_estimada' => '5 Horas',
+          'tipo_duracion' => 'Horas'
+        ],
+        [
+          'id_servicio' => 4,
+          'servicio' => 'Remolque',
+          'precio' => 'Variable',
+          'duracion_estimada' => 'Variable',
+          'tipo_duracion' => ''
+        ]];
+        break;
+    }
     return $datos;
   }
 }
