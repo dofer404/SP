@@ -13,7 +13,7 @@ INSERT INTO apex_item (item_id, proyecto, item, padre_id, padre_proyecto, padre,
 	'512000001', --item
 	NULL, --padre_id
 	'sgpm', --padre_proyecto
-	'512000002', --padre
+	'512000012', --padre
 	'0', --carpeta
 	'0', --nivel_acceso
 	'web', --solicitud_tipo
@@ -28,7 +28,7 @@ INSERT INTO apex_item (item_id, proyecto, item, padre_id, padre_proyecto, padre,
 	'9000001', --punto_montaje
 	NULL, --actividad_accion
 	'1', --menu
-	'3', --orden
+	'2', --orden
 	'0', --solicitud_registrar
 	NULL, --solicitud_obs_tipo_proyecto
 	NULL, --solicitud_obs_tipo
