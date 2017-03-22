@@ -28,7 +28,23 @@ class datos
 				'actividad' => 'Carga',
 				'nacionalidad' => 'Canadiense'
 			]
-			];
+		];
+    return $datos;
+  }
+
+  static function obtenerListadoBarcosConServiciosPendientes($value='')
+  {
+    $nro = 134540;
+    $datos = self::obtenerListadoBarcosConEntradaNoProcesada();
+    foreach ($datos as $key => $value) {
+      if ($value['matricula'] == '206581765') {
+        unset($datos[$key]);
+      } else {
+        $datos[$key]['nro_entrada'] = '000'.$nro;
+        $datos[$key]['estado'] = 'En espera';
+        $nro = $nro+1;
+      }
+    }
     return $datos;
   }
 
@@ -131,6 +147,15 @@ class datos
           'tipo_duracion' => ''
         ]];
         break;
+    }
+    return $datos;
+  }
+
+  static function obtenerServiciosPendientes()
+  {
+    $datos = self::obtenerServiciosDisponibles();
+    foreach ($datos as $key => $value) {
+      $datos[$key]['estado'] = 'En espera';
     }
     return $datos;
   }
