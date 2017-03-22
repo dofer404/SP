@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200.69582mm"
+   height="74.68721mm"
+   viewBox="0 0 711.12691 264.63972"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="cpts.svg"
+   inkscape:export-filename="/home/fhor/logo.png"
+   inkscape:export-xdpi="10.882721"
+   inkscape:export-ydpi="10.882721">
+  <defs
+     id="defs4">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4592"
+       x="-0.063333474"
+       width="1.126667"
+       y="-0.1902106"
+       height="1.3804212">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="11.696366"
+         id="feGaussianBlur4594" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-89.532157"
+     inkscape:cy="-71.879038"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1535"
+     inkscape:window-height="876"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(281.82244,-128.08278)">
+    <rect
+       style="opacity:0.00100002;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.04294443;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
+       id="rect4597"
+       width="709.08398"
+       height="262.59677"
+       x="-280.80096"
+       y="129.10425" />
+    <path
+       transform="matrix(0.97982084,0.19987775,0,1,0,0)"
+       style="opacity:1;fill:#2d4b70;fill-opacity:1;stroke:none;stroke-width:1.41434276;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4592)"
+       d="m 285.84805,252.07599 c 2.06191,62.1415 -221.614858,65.70824 -221.614858,65.70824 -566.601722,227.95192 -221.614842,-29.41858 -221.614852,-65.70824 -1e-5,-36.28966 398.19769,-159.812357 520.5922,-159.812356 122.39451,-2e-6 -78.55805,123.780576 -77.36249,159.812356 z"
+       id="ellipse4546"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss" />
+    <ellipse
+       style="opacity:1;fill:#5e6fb2;fill-opacity:1;stroke:#000000;stroke-width:1.41434276;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4140"
+       cx="64.233192"
+       cy="252.07599"
+       rx="221.61485"
+       ry="57.142857"
+       transform="matrix(0.97982084,0.19987775,0,1,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:157.19996643px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="-175.85921"
+       y="440.42249"
+       id="text4136"
+       sodipodi:linespacing="125%"
+       transform="matrix(1.4142136,-0.3689431,0,0.70710677,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4138"
+         x="-175.85921"
+         y="440.42249"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">GCPTs</tspan></text>
+  </g>
+</svg>
