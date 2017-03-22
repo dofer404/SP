@@ -1,3 +1,15 @@
 /**
-	Incluir aquí las reglas css propias de este proyecto 
+	Incluir aquï¿½ las reglas css propias de este proyecto
 */
+
+.ei-form-etiq {
+    float: left;
+    margin-right: 4px;
+    line-height: 23px;
+    font-weight: bold;
+}
+
+.ef-fijo {
+    text-align: left;
+    font-size: 13px;
+}
