@@ -28,7 +28,23 @@ class datos
 				'actividad' => 'Carga',
 				'nacionalidad' => 'Canadiense'
 			]
-			];
+		];
+    return $datos;
+  }
+
+  static function obtenerListadoBarcosConServiciosPendientes($value='')
+  {
+    $nro = 134540;
+    $datos = self::obtenerListadoBarcosConEntradaNoProcesada();
+    foreach ($datos as $key => $value) {
+      if ($value['matricula'] == '206581765') {
+        unset($datos[$key]);
+      } else {
+        $datos[$key]['nro_entrada'] = '000'.$nro;
+        $datos[$key]['estado'] = 'En espera';
+        $nro = $nro+1;
+      }
+    }
     return $datos;
   }
 
@@ -78,10 +94,19 @@ class datos
         'id_servicio' => 1,
         'servicio' => 'Descarga de Contenedores',
         'precio' => '$1500',
-        'duracion_estimada' => '30',
-        'tipo_duracion' => 'Minutos'
+        'duracion_estimada' => '0:30',
+        'tipo_duracion' => 'Horas'
       ]
     ];
+    return $datos;
+  }
+
+  static function obtenerServiciosPendientes()
+  {
+    $datos = self::obtenerServiciosDisponibles();
+    foreach ($datos as $key => $value) {
+      $datos[$key]['estado'] = 'En espera';
+    }
     return $datos;
   }
 }
