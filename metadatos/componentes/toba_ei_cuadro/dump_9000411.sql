@@ -1,5 +1,5 @@
 ------------------------------------------------------------
---[9000411]--  cuadro_2 
+--[9000411]--  cuadro_2
 ------------------------------------------------------------
 
 ------------------------------------------------------------
@@ -51,7 +51,7 @@ INSERT INTO apex_objeto_eventos (proyecto, evento_id, objeto, identificador, eti
 	'9000436', --evento_id
 	'9000411', --objeto
 	'asociar', --identificador
-	'Asociar', --etiqueta
+	'&Asociar', --etiqueta
 	'1', --maneja_datos
 	'1', --sobre_fila
 	NULL, --confirmacion
